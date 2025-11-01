@@ -26,7 +26,7 @@ In diesem Kurs wirst du:
 - Einen Computer (offensichtlich 😄. Geht auch auf deinem Computer zu Hause oder einem Raspberry Pi4
 - Tastatur und Maus
 
-## 📚 Kursprogramm - 5 Stunden voller Action!
+## 📚 Kursprogramm 
 
 ### 🕐 Teil 1: "Python Basics - Dein erster Code!"
 - **Was ist Python?** (Spoiler: Es hat nichts mit Schlangen zu tun... oder doch? 🐍)
