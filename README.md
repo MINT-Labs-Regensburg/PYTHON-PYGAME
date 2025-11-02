@@ -1,10 +1,10 @@
-# Python & Pygame Kurs - Gaming Adventure! 🎮
+# Python & Pygame Kurs - Gaming Adventure!
 
 Willkommen zu unserem Python & Pygame Kurs!
 
 ---
 
-## Herzlichen Dank
+## 💝 Herzlichen Dank
 
 | Ein herzliches Dankeschön an **Dr. Norwin von Malm** und **Stefan Grötsch** – die Preisträger des [Deutschen Zukunftspreises 2024](https://www.deutscher-zukunftspreis.de/de/team-1-2024)<br><br>Mit ihrer Spende und ihrer großzügigen Unterstützung haben Sie die Entwicklung und Durchführung dieses Kurses ermöglicht. | <img src="assets/DZP_Logo_2.svg" alt="DZP Logo" width="120"/> |
 |:---|:---:|
@@ -39,7 +39,7 @@ In diesem Kurs wirst du:
 
 ---
 
-## Kursprogramm
+## Kursdurchführung
 
 ### Teil 1: So startest du Python in Visual Studio Code
 
