@@ -102,19 +102,19 @@ In diesem Kurs wirst du:
 ### 🔧 Ein pygame braucht mindestens diese Elemente:
 
 
-1. 📦 **`import pygame`** - Lade die Pygame-Bibliothek
-2. 🚀 **`pygame.init()`** - Initialisiere alle Pygame-Module
-3. 🖼️ **`screen = pygame.display.set_mode((800, 600))`** - Erstelle ein Fenster mit 800x600 Pixeln
-4. 🏷️ **`pygame.display.set_caption("Titel")`** - Setze den Fenstertitel
-5. 🔄 **`running = True`** - Variable für die Hauptschleife
-6. 🔁 **`while running:`** - Hauptschleife (Game Loop) - läuft bis das Spiel beendet wird
-7. 🎮 **`for event in pygame.event.get():`** - Verarbeite alle Events (Maus, Tastatur, etc.)
-8. ❌ **`if event.type == pygame.QUIT:`** - Prüfe ob das Fenster geschlossen wurde
-9. 🎨 **`screen.fill((255, 0, 0))`** - Fülle den Bildschirm mit einer Farbe (RGB-Werte)
-10. 🔄 **`pygame.display.flip()`** - Aktualisiere das Display
-11. 🛑 **`pygame.quit()`** - Beende Pygame ordnungsgemäß
+1. **`import pygame`** - Lade die pygame-Bibliothek
+2. **`pygame.init()`** - Initialisiere alle pygame-Module
+3. **`screen = pygame.display.set_mode((800, 600))`** - Erstelle ein Fenster mit 800x600 Pixeln
+4. **`pygame.display.set_caption("Titel")`** - Setze den Fenstertitel
+5. **`running = True`** - Variable für die Hauptschleife
+6. **`while running:`** - Hauptschleife (Game Loop) - läuft bis das Spiel beendet wird
+7. **`for event in pygame.event.get():`** - Verarbeite alle Events (Maus, Tastatur, etc.)
+8. **`if event.type == pygame.QUIT:`** - Prüfe ob das Fenster geschlossen wurde
+9. **`screen.fill((255, 0, 0))`** - Fülle den Bildschirm mit einer Farbe (RGB-Werte)
+10. **`pygame.display.flip()`** - Aktualisiere das Display
+11. **`pygame.quit()`** - Beende pygame ordnungsgemäß
 
-### Minimales PyGame Programm:
+### Minimales Pygame Programm:
 ```python
 import pygame
 
