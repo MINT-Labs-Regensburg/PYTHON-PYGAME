@@ -6,7 +6,7 @@ Willkommen zu unserem Python & Pygame Kurs! 🚀
 
 ## 💝 Herzlichen Dank
 
-| Ein herzliches Dankeschön an **Dr. Norwin von Malm** und **Stefan Grötsch** – die Preisträger des [Deutschen Zukunftspreises 2024](https://www.deutscher-zukunftspreis.de/de/team-1-2024).<br><br>Mit ihrer Spende und ihrer großzügigen Unterstützung haben Sie die Entwicklung und Durchführung dieses Kurses ermöglicht. 🙏 | <img src="assets/DZP_Logo_2.svg" alt="DZP Logo" width="120"/> |
+| Ein herzliches Dankeschön an **Dr. Norwin von Malm** und **Stefan Grötsch** – die Preisträger des [Deutschen Zukunftspreises 2024](https://www.deutscher-zukunftspreis.de/de/team-1-2024)<br><br>Mit ihrer Spende und ihrer großzügigen Unterstützung haben Sie die Entwicklung und Durchführung dieses Kurses ermöglicht. 🙏 | <img src="assets/DZP_Logo_2.svg" alt="DZP Logo" width="120"/> |
 |:---|:---:|
 
 ---
@@ -30,7 +30,10 @@ In diesem Kurs wirst du:
 3. 🎮 **Pygame** - Die Gaming-Bibliothek, die alles möglich macht
 4. 📋 **Cheat-sheets** - Übersicht über die wichtigsten Befehle:
    - [Python Cheatsheet](assets/python-cheat-sheet.pdf) 📄
-   - [Pygame Cheatsheet](assets/pygame-cheats-heet.pdf) 📄
+   - [Pygame Cheatsheet deutsch](assets/pygame-cheat-sheet.pdf) 📄
+   - [Pygame Cheatsheet](assets/rootix_basic-pygame.pdf) 📄
+   
+
 
 ### 💻 Hardware
 - ✅ Einen Computer *(offensichtlich 😄)*
@@ -51,44 +54,40 @@ In diesem Kurs wirst du:
 5. ▶️ **Programm starten** - `F5` drücken oder rechte Maustaste → "Run Python File"
 6. 📺 **Ausgabe sehen** - Unten im Terminal erscheint das Ergebnis
 
-#### 🌟 Dein erstes Python-Programm:
-```python
-print("Hello World!")
-```
+
 
 ---
 
-### 🕑 Teil 2: "Python Power-Up - Listen, Schleifen & Co."
+### 🕑 Teil 2: "Python - Listen, Schleifen & Co."
 
 **Was lernst du:**
-- 📝 **Listen und Dictionaries** - Wie man Daten organisiert
+- 📝 **Listen** - Wie man Daten organisiert
 - 🤔 **If-Else Statements** - Deinem Programm Entscheidungen beibringen
 - 🔄 **Schleifen** - Lass den Computer für dich arbeiten!
 
 
-#### 📋 Aufgaben für Teil 2:
-
-**🎯 Aufgabe 1: Variablen - Schritt für Schritt**
+**🎯 Aufgabe 1: Variablen**
 1. ✏️ Erstelle Variablen für `name`, `alter` und `groesse`
 2. 🖨️ Gib sie mit `print()` aus. **Beispiel:** `Ich heisse Nicole bin 12 Jahre alt und 1.57 Meter gross`
 3. ➕ Verändere das `alter` um +1 
 4. 🧮 Berechne `summe` von zwei Zahlen
-5. ❓ Frage den Nutzer nach seiner Lieblingsfarbe mit `input()`
+5. ❓ Frage den Nutzer nach seiner Lieblingsfarbe with `input()`
 
 **🎯 Aufgabe 2: If-Statements**
-1. 🌡️ Schreibe ein `if` für Temperatur > 20
-2. 🔞 Erweitere es zu `if-else` für Alter >= 18
-3. 📊 Baue ein Notensystem mit `if-elif-else` *(90+ = Sehr gut, 80+ = Gut, etc.)*
+
+1. 🌡️ **Temperatur-Check:** Schreibe ein `if-else` für Temperatur. Ist die mit `input()` eingegebene Temperatur > 20, schreibe "schön warm" sonst schreibe "kalt isses"
+
+2. 📊 **Notensystem:** Baue ein Notensystem mit `if-elif-else` *(90+ = Sehr gut, 80+ = Gut, etc.)*
 
 
 **🎯 Aufgabe 3: Schleifen**
 1. 🔢 Zähle von 1 bis 10 mit `for i in range(1, 11)`
 2. 🍎 Gib alle Früchte aus einer Liste aus
-3. ⏰ Mache einen Countdown mit `while`
+3. ⏰ Mache einen Countdown with `while`.  `10 9 8 7 6 5 4 3 2 1 START`
 4. ✖️ Programmiere das kleine 1x1 für die Zahl 5
 5. 🔢 Finde alle geraden Zahlen von 1-20 mit `if zahl % 2 == 0`
 
-**🌟 Zusatzaufgabe:** Einen simplen Taschenrechner programmieren. [Beispiel-Code hier](beispiel-programme/taschenrechner.py)
+**🌟 Zusatzaufgabe:** Programmiere einen simplen Taschenrechner. Zwei Zahlen und Grundrechenarten  [Beispiel-Code hier](beispiel-programme/taschenrechner.py)
 
 ---
 
@@ -100,6 +99,22 @@ print("Hello World!")
 - 🎨 **Farben und Formen** - Rechtecke, Kreise und was das Herz begehrt
 - 🚀 **Mini-Projekt:** Ein buntes, sich bewegendes Rechteck
 
+### 🔧 Ein pygame braucht mindestens diese Elemente:
+
+
+1. 📦 **`import pygame`** - Lade die Pygame-Bibliothek
+2. 🚀 **`pygame.init()`** - Initialisiere alle Pygame-Module
+3. 🖼️ **`screen = pygame.display.set_mode((800, 600))`** - Erstelle ein Fenster mit 800x600 Pixeln
+4. 🏷️ **`pygame.display.set_caption("Titel")`** - Setze den Fenstertitel
+5. 🔄 **`running = True`** - Variable für die Hauptschleife
+6. 🔁 **`while running:`** - Hauptschleife (Game Loop) - läuft bis das Spiel beendet wird
+7. 🎮 **`for event in pygame.event.get():`** - Verarbeite alle Events (Maus, Tastatur, etc.)
+8. ❌ **`if event.type == pygame.QUIT:`** - Prüfe ob das Fenster geschlossen wurde
+9. 🎨 **`screen.fill((255, 0, 0))`** - Fülle den Bildschirm mit einer Farbe (RGB-Werte)
+10. 🔄 **`pygame.display.flip()`** - Aktualisiere das Display
+11. 🛑 **`pygame.quit()`** - Beende Pygame ordnungsgemäß
+
+### Minimales PyGame Programm:
 ```python
 import pygame
 
@@ -107,6 +122,18 @@ import pygame
 pygame.init()
 screen = pygame.display.set_mode((800, 600))
 pygame.display.set_caption("Mein erstes Spiel! 🎮")
+
+# Game Loop
+running = True
+while running:
+    for event in pygame.event.get():
+        if event.type == pygame.QUIT:
+            running = False
+    
+    screen.fill((255, 0, 0))  # Roter Hintergrund
+    pygame.display.flip()
+
+pygame.quit()
 ```
 
 ---
