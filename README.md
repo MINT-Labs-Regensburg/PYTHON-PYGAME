@@ -85,7 +85,7 @@ In diesem Kurs wirst du:
 2. 🍎 Gib alle Früchte aus einer Liste aus
 3. ⏰ Mache einen Countdown with `while`.  `10 9 8 7 6 5 4 3 2 1 START`
 4. ✖️ Programmiere das kleine 1x1 für die Zahl 5
-5. 🔢 Finde alle geraden Zahlen von 1-20 mit `if zahl % 2 == 0`
+5. 🔢 Finde alle geraden Zahlen von 1-20 with `if zahl % 2 == 0`
 
 **🌟 Zusatzaufgabe:** Programmiere einen simplen Taschenrechner. Zwei Zahlen und Grundrechenarten  [Beispiel-Code hier](beispiel-programme/taschenrechner.py)
 
@@ -143,8 +143,24 @@ pygame.quit()
 **Was lernst du:**
 - ⌨️ **Tastatureingaben** - Steuerung deiner Spielfigur
 - 💥 **Kollisionserkennung** - Wenn Objekte aufeinandertreffen
-- 🔊 **Sounds und Musik** - Akustische Effekte für mehr Atmosphäre
 - 🎯 **Mini-Projekt:** Ein einfaches "Catch the Ball" Spiel
+
+**🎯 Aufgabe 4: Tastatureingaben**
+1. ⌨️ Erstelle ein Rechteck, das sich mit den Pfeiltasten bewegt
+2. 🚀 Füge WASD-Steuerung hinzu (W=hoch, A=links, S=runter, D=rechts)
+3. 🏃 Lass das Rechteck schneller werden, wenn Shift gedrückt wird
+
+**🎯 Aufgabe 5: Kollisionserkennung**
+1. 💥 Erstelle zwei Rechtecke und erkenne, wenn sie sich berühren
+2. 🎨 Ändere die Farbe bei einer Kollision
+3. 📊 Zähle die Anzahl der Kollisionen und zeige sie an
+
+**🌟 Zusatzaufgabe:** Programmiere ein "Catch the Ball" Spiel mit folgenden Anforderungen:
+1. 🎯 Programmiere ein "Catch the Ball" Spiel
+2. ⚡ Füge einen Score-Counter hinzu
+3. ⏱️ Baue einen Timer ein (30 Sekunden Spielzeit)
+
+[Beispiel-Code hier](beispiel-programme/catch_the_ball.py)
 
 ---
 
