@@ -99,20 +99,19 @@ In diesem Kurs wirst du:
 - 🎨 **Farben und Formen** - Rechtecke, Kreise und was das Herz begehrt
 - 🚀 **Mini-Projekt:** Ein buntes, sich bewegendes Rechteck
 
-### 🔧 Ein pygame braucht mindestens diese Elemente:
+### 🔧 Unser pygame braucht mindestens diese Elemente:
 
-
-1. **`import pygame`** - Lade die pygame-Bibliothek
-2. **`pygame.init()`** - Initialisiere alle pygame-Module
-3. **`screen = pygame.display.set_mode((800, 600))`** - Erstelle ein Fenster mit 800x600 Pixeln
-4. **`pygame.display.set_caption("Titel")`** - Setze den Fenstertitel
-5. **`running = True`** - Variable für die Hauptschleife
-6. **`while running:`** - Hauptschleife (Game Loop) - läuft bis das Spiel beendet wird
-7. **`for event in pygame.event.get():`** - Verarbeite alle Events (Maus, Tastatur, etc.)
-8. **`if event.type == pygame.QUIT:`** - Prüfe ob das Fenster geschlossen wurde
-9. **`screen.fill((255, 0, 0))`** - Fülle den Bildschirm mit einer Farbe (RGB-Werte)
-10. **`pygame.display.flip()`** - Aktualisiere das Display
-11. **`pygame.quit()`** - Beende pygame ordnungsgemäß
+- **`import pygame`** - Lade die pygame-Bibliothek
+- **`pygame.init()`** - Initialisiere alle pygame-Module
+- **`screen = pygame.display.set_mode((800, 600))`** - Erstelle ein Fenster mit 800x600 Pixeln
+- **`pygame.display.set_caption("Titel")`** - Setze den Fenstertitel
+- **`running = True`** - Variable für die Hauptschleife
+- **`while running:`** - Hauptschleife (Game Loop) - läuft bis das Spiel beendet wird
+- **`for event in pygame.event.get():`** - Verarbeite alle Events (Maus, Tastatur, etc.)
+- **`if event.type == pygame.QUIT:`** - Prüfe ob das Fenster geschlossen wurde
+- **`screen.fill((255, 0, 0))`** - Fülle den Bildschirm mit einer Farbe (RGB-Werte)
+- **`pygame.display.flip()`** - Aktualisiere das Display
+- **`pygame.quit()`** - Beende pygame ordnungsgemäß
 
 ### Minimales Pygame Programm:
 ```python
@@ -155,12 +154,14 @@ pygame.quit()
 2. 🎨 Ändere die Farbe bei einer Kollision
 3. 📊 Zähle die Anzahl der Kollisionen und zeige sie an
 
+- [Beispiel-Code Kollisionserkennung](beispiel-programme/kollisionserkennung.py)
+
 **🌟 Zusatzaufgabe:** Programmiere ein "Catch the Ball" Spiel mit folgenden Anforderungen:
 1. 🎯 Programmiere ein "Catch the Ball" Spiel
 2. ⚡ Füge einen Score-Counter hinzu
 3. ⏱️ Baue einen Timer ein (30 Sekunden Spielzeit)
 
-[Beispiel-Code hier](beispiel-programme/catch_the_ball.py)
+- [Beispiel-Code Catch the Ball](beispiel-programme/catch_the_ball.py)
 
 ---
 
