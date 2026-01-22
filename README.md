@@ -233,3 +233,4 @@ pygame.quit()
 
 *Viel Spaß beim Programmieren! 🚀*
 
+## Mehr Projekte und Anleitungen findest du [hier](https://wiki.mint-labs.de/)
