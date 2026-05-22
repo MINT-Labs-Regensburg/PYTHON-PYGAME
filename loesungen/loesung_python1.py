@@ -10,7 +10,7 @@ print("Ich heisse", name, "bin", alter, "Jahre alt und", groesse, "Meter gross")
 
 # 3. Verändere das alter um +1
 alter += 1
-print("Nach einem Jahr bin ich", alter, "Jahre alt")
+print("Nächstes Jahr werde ich", alter, "Jahre alt sein")
 
 # 4. Berechne summe von zwei Zahlen
 zahl1 = 10

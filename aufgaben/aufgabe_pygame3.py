@@ -9,4 +9,7 @@
 # 3. ⏱️ Baue einen Timer ein (30 Sekunden Spielzeit)
 
 
-# 4. 🔊 Lade einen Sound-Effekt bei erfolgreichen Treffern
+# 4. 🔊 Lade Sound-Effekte:
+#    - hit.wav bei erfolgreichen Treffern
+#    - miss.wav wenn der Ball durchgeht
+# Die Sounds findest du in assets/ im Projektordner

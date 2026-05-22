@@ -87,14 +87,14 @@ print("Hello World!")
 4. Programmiere das kleine 1x1 für die Zahl 5
 5. Finde alle geraden Zahlen von 1-20 with `if zahl % 2 == 0`
 
-**Zusatzaufgabe:** Programmiere einen simplen Taschenrechner. Zwei Zahlen und Grundrechenarten  [Beispiel-Code hier](beispiel-programme/taschenrechner.py)
+**Zusatzaufgabe:** Programmiere einen simplen Taschenrechner. Zwei Zahlen und Grundrechenarten  [Beispiel-Code hier](loesungen/taschenrechner.py)
 
 ---
 
 ### Teil 3: "pygame Installation & Erste Grafiken"
 
 **Was lernst du:**
-- **pygame Installation** - Let's get this party started!
+- **pygame Installation** -  `pip install pygame-ce`
 - **Fenster erstellen** - Dein erstes Game-Fenster
 - **Farben und Formen** - Rechtecke, Kreise und was das Herz begehrt
 - **Mini-Projekt:** Ein buntes, sich bewegendes Rechteck
@@ -154,14 +154,14 @@ pygame.quit()
 2. Ändere die Farbe bei einer Kollision
 3. Zähle die Anzahl der Kollisionen und zeige sie an
 
-- [Beispiel-Code Kollisionserkennung](beispiel-programme/kollisionserkennung.py)
+- [Beispiel-Code Kollisionserkennung](loesungen/loesung_pygame2.py)
 
 **Zusatzaufgabe:** Programmiere ein "Catch the Ball" Spiel mit folgenden Anforderungen:
 1. Programmiere ein "Catch the Ball" Spiel
 2. Füge einen Score-Counter hinzu
 3. Baue einen Timer ein (30 Sekunden Spielzeit)
 
-- [Beispiel-Code Catch the Ball](beispiel-programme/catch_the_ball.py)
+- [Beispiel-Code Catch the Ball](loesungen/loesung_pygame3.py)
 
 ---
 

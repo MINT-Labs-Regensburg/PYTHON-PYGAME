@@ -6,7 +6,7 @@
 # 2. 🖨️ Gib sie mit print() aus. Beispiel: "Ich heisse Nicole bin 12 Jahre alt und 1.57 Meter gross"
 
 
-# 3. ➕ Verändere das alter um +1
+# 3. ➕ Verändere das alter um +1. Gib aus "Nächstes Jahr werde ich XX Jahre alt sein".
 
 
 # 4. 🧮 Berechne summe von zwei Zahlen
