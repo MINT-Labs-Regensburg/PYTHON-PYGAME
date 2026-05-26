@@ -165,15 +165,6 @@ pygame.quit()
 
 ---
 
-### Teil 5: "Dein eigenes Spiel - Kreativität ist gefragt!"
-
-**Was lernst du:**
-- **Projektplanung** - Was für ein Spiel willst du machen?
-- **Freie Entwicklungszeit** - Lass deiner Fantasie freien Lauf!
-- **Debugging** - Fehler finden und beheben *(gehört dazu!)*
-- **Präsentation** - Zeig uns dein Meisterwerk!
-
----
 
 ## Mögliche Spielideen
 
@@ -185,52 +176,9 @@ pygame.quit()
 
 ---
 
-## Hilfreiche Tipps
 
-### VS Code Extensions 
-- **Python Extension** - Für bessere Python-Unterstützung
-- **Pylint** - Hilft dir, sauberen Code zu schreiben
-- **Python Docstring Generator** - Für professionelle Dokumentation
 
-### Debugging Tipps
-- **Keine Panik bei Fehlern!** - Fehler sind normal und helfen beim Lernen
-- **print()** ist dein Freund - Nutze es zum Debuggen
-- **Google ist dein bester Kumpel** - Stackoverflow kennt alle Antworten
-- **Frag einfach!** - Keine Frage ist dumm
 
-### Kreativitäts-Booster
-- **Kostenlose Grafiken:** [OpenGameArt.org](https://opengameart.org/)
-- **Gratis Sounds:** [Freesound.org](https://freesound.org/)
-- **Farbpaletten:** [Coolors.co](https://coolors.co/)
-
----
-
-## Nach dem Kurs
-
-### Was kannst du danach?
-- Python-Programme schreiben
-- Einfache Spiele mit pygame entwickeln
-- Visual Studio Code professionell nutzen
-- Eigene Projekte starten
-- Mit anderen Programmierern sprechen *(du kennst jetzt die Geheimsprache! 🤫)*
-
-### Weiterführende Ressourcen
-- **Python.org** - Die offizielle Python-Website
-- **Real Python** - Tutorials für alle Levels
-- **pygame Tutorials** - Vertiefe dein Gaming-Wissen
-- **GitHub** - Teile deine Projekte mit der Welt
-
----
-
-## Fun Facts
-
-- **Python** wurde nach "Monty Python's Flying Circus" benannt!
-- **pygame** wird für professionelle Spiele verwendet
-- **Visual Studio Code** ist einer der beliebtesten Code-Editoren weltweit
-- Du wirst nach diesem Kurs offiziell ein **Programmierer** sein! 👨‍💻👩‍💻
-
----
-
-*Viel Spaß beim Programmieren! 🚀*
+*Happy coding 🚀*
 
 ## Mehr Projekte und Anleitungen findest du [hier](https://wiki.mint-labs.de/)
