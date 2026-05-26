@@ -58,12 +58,13 @@ print("Hello World!")
 
 ---
 
-### Teil 2: "Python - Listen, Schleifen & Co."
+### Teil 2: "Python - Listen, Schleifen, Funktionen & Co."
 
 **Was lernst du:**
 - **Listen** - Wie man Daten organisiert
 - **If-Else Statements** - Deinem Programm Entscheidungen beibringen
 - **Schleifen** - Lass den Computer für dich arbeiten!
+- **Funktionen** - Code wiederverwenden und Parameter übergeben
 
 
 **Aufgabe 1: Variablen**
@@ -87,9 +88,19 @@ print("Hello World!")
 4. Programmiere das kleine 1x1 für die Zahl 5
 5. Finde alle geraden Zahlen von 1-20 with `if zahl % 2 == 0`
 
+
+**Aufgabe 4: Funktionen**
+1. Schreibe eine Funktion `begruesse(name)`, die `"Hallo, <name>!"` ausgibt
+2. Schreibe eine Funktion `addiere(a, b)`, die die Summe zweier Zahlen zurückgibt und ausgibt
+3. Schreibe eine Funktion `ist_gerade(zahl)`, die `True` oder `False` zurückgibt
+4. Rufe jede Funktion mit verschiedenen Werten auf
+
 **Zusatzaufgabe:** Programmiere einen simplen Taschenrechner. Zwei Zahlen und Grundrechenarten  [Beispiel-Code hier](loesungen/taschenrechner.py)
 
+
 ---
+
+# 🎮 Jetzt gehts los mit pygame
 
 ### Teil 3: "pygame Installation & Erste Grafiken"
 
