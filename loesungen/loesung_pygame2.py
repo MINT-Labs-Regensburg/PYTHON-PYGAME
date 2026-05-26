@@ -1,4 +1,4 @@
-# Lösung Aufgabe 5: Kollisionserkennung
+# Lösung aufgabe_pygame2: Kollisionserkennung
 
 import pygame
 
@@ -36,7 +36,11 @@ clock = pygame.time.Clock()
 
 # Kollisionserkennung
 def check_collision(x1, y1, size1, x2, y2, size2):
-    return x1 < x2 + size2 and x1 + size1 > x2 and y1 < y2 + size2 and y1 + size1 > y2
+    # Prüfe ob Rechteck 1 und Rechteck 2 sich überschneiden
+    beruehrt_horizontal = x1 < x2 + size2 and x1 + size1 > x2
+    beruehrt_vertikal = y1 < y2 + size2 and y1 + size1 > y2
+
+    return beruehrt_horizontal and beruehrt_vertikal
 
 
 # Game Loop

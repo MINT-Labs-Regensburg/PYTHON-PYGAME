@@ -1,4 +1,4 @@
-# Lösung Aufgabe 1: Variablen
+# Lösung aufgabe_python1: Variablen
 
 # 1. Erstelle Variablen für name, alter und groesse
 name = "Nicole"

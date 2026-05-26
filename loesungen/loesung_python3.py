@@ -1,4 +1,4 @@
-# Lösung Aufgabe 3: Schleifen
+# Lösung aufgabe_python3: Schleifen
 
 # 1. Zähle von 1 bis 10 mit for i in range(1, 11)
 print("Zählen von 1 bis 10:")

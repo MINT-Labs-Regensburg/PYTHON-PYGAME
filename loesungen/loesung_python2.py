@@ -1,4 +1,4 @@
-# Lösung Aufgabe 2: If-Statements
+# Lösung aufgabe_python2: If-Statements
 
 # 1. Temperatur-Check
 temperatur = int(input("Temperatur eingeben: "))

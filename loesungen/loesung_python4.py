@@ -1,4 +1,4 @@
-# Lösung Aufgabe 4: Funktionen
+# Lösung aufgabe_python4: Funktionen
 
 # 1. Funktion begruesse(name) – gibt "Hallo, <name>!" aus
 def begruesse(name):

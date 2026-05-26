@@ -1,4 +1,4 @@
-# Loesung Aufgabe 6: Game Mechanics
+# Lösung aufgabe_pygame3: Game Mechanics
 
 import os
 import random
