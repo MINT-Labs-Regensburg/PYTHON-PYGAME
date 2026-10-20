@@ -23,18 +23,18 @@ In diesem Kurs wirst du:
 ## Was brauchst du?
 
 ### Software Installation
-*haben wir hier bereits für dich installiert. Kannst du zu Hause kostenlos runterladen*
+Auf den Kursrechnern sind Python und Visual Studio Code vorbereitet. Wenn du deinen eigenen Rechner mitbringst, installiere Python 3 und Visual Studio Code mit der Python-Erweiterung am besten vor dem Kurs. pygame installieren wir gemeinsam im pygame-Teil.
 
 1. **Python 3.x** - Die Programmiersprache unserer Wahl
 2. **Visual Studio Code** - Unser cooler Code-Editor
-3. **pygame** - Die Gaming-Bibliothek, die alles möglich macht
+3. **Python-Erweiterung für VS Code** - Zum Ausführen und Verwalten von Python in VS Code
 4. **Cheat-sheets** - Übersicht über die wichtigsten Befehle:
    - [Python Cheatsheet](assets/python-cheat-sheet.pdf)
    - [pygame Cheatsheet deutsch](assets/pygame-cheat-sheet.pdf)
    - [pygame Cheatsheet](assets/rootix_basic-pygame.pdf)
 
 ### Hardware
-- Einen Computer mit Tastatur un Maus
+- Einen Computer mit Tastatur und Maus
 - *Geht auch auf deinem Computer zu Hause oder einem Raspberry Pi4*
 
 ---
@@ -105,10 +105,30 @@ print("Hello World!")
 ### Teil 3: "pygame Installation & Erste Grafiken"
 
 **Was lernst du:**
-- **pygame Installation** -  `pip install pygame-ce`
+- **Virtuelle Umgebung und pygame-Installation** - pygame sicher im Projekt installieren
 - **Fenster erstellen** - Dein erstes Game-Fenster
 - **Farben und Formen** - Rechtecke, Kreise und was das Herz begehrt
 - **Mini-Projekt:** Ein buntes, sich bewegendes Rechteck
+
+#### Virtuelle Umgebung einrichten und pygame installieren
+
+Eine virtuelle Umgebung (`.venv`) hält die Pakete für dieses Projekt zusammen. So wird pygame nicht in eine andere Python-Installation auf deinem Rechner installiert.
+
+1. Öffne den Kursordner in VS Code.
+2. Drücke `Strg + Umschalt + P` und wähle **Python: Create Environment**.
+3. Wähle **Venv** und danach eine installierte Python-Version. VS Code erstellt die Umgebung im Ordner `.venv`.
+4. Öffne ein neues Terminal in VS Code und installiere pygame-ce:
+
+    ```bash
+    python -m pip install pygame-ce
+    ```
+
+Wenn für den Kursordner bereits eine `.venv` vorhanden ist, wähle sie in VS Code als Python-Umgebung aus, statt eine neue zu erstellen. Teste die Installation mit:
+
+```python
+import pygame
+print(pygame.version.ver)
+```
 
 ### Unser pygame braucht mindestens diese Elemente:
 

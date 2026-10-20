@@ -11,7 +11,7 @@ print()
 obst = ["Apfel", "Banane", "Birne", "Orange"]
 print("Mein Lieblingsobst:")
 for frucht in obst:
-    print(f"- {frucht}")
+    print(frucht)
 
 print()
 
