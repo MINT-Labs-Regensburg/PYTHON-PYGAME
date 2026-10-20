@@ -2,6 +2,7 @@
 
 import pygame
 
+# Pygame initialisieren
 pygame.init()
 
 # Konstanten
@@ -17,18 +18,19 @@ BLACK = (0, 0, 0)
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Kollisionserkennung")
 
-# Rechteck 1 (beweglich)
+# Spielobjekte vorbereiten
+# Bewegliches Rechteck
 rect1_size = 50
 rect1_x = 100
 rect1_y = 100
 rect1_speed = 5
 
-# Rechteck 2 (fest)
+# Festes Rechteck
 rect2_size = 80
 rect2_x = 400
 rect2_y = 300
 
-# Kollisions-Zähler
+# Spielstand und Zeitsteuerung vorbereiten
 collision_count = 0
 font = pygame.font.Font(None, 36)
 clock = pygame.time.Clock()
@@ -36,24 +38,24 @@ clock = pygame.time.Clock()
 
 # Kollisionserkennung
 def check_collision(x1, y1, size1, x2, y2, size2):
-    # Prüfe ob Rechteck 1 und Rechteck 2 sich überschneiden
+    # Eine Kollision liegt vor, wenn sich beide Achsen überschneiden.
     beruehrt_horizontal = x1 < x2 + size2 and x1 + size1 > x2
     beruehrt_vertikal = y1 < y2 + size2 and y1 + size1 > y2
 
     return beruehrt_horizontal and beruehrt_vertikal
 
 
-# Game Loop
+# Hauptschleife
 running = True
 collision_detected = False
 
 while running:
-    # Events
+    # Ereignisse verarbeiten
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
-    # Tastatureingaben
+    # Tastatureingaben verarbeiten
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT] and rect1_x > 0:
         rect1_x -= rect1_speed
@@ -64,29 +66,31 @@ while running:
     if keys[pygame.K_DOWN] and rect1_y < SCREEN_HEIGHT - rect1_size:
         rect1_y += rect1_speed
 
-    # Kollision prüfen
+    # Kollision erkennen
     was_collision = collision_detected
     collision_detected = check_collision(
         rect1_x, rect1_y, rect1_size, rect2_x, rect2_y, rect2_size
     )
 
-    # Kollisions-Zähler erhöhen
+    # Pro Berührung nur einmal zählen.
     if collision_detected and not was_collision:
         collision_count += 1
 
-    # Zeichnen
+    # Szene zeichnen
     screen.fill(WHITE)
 
-    # Rechtecke zeichnen (Farbe ändert sich bei Kollision)
+    # Rechtecke zeichnen; das bewegliche Rechteck wechselt bei Kollision die Farbe.
     rect1_color = GREEN if collision_detected else BLUE
     pygame.draw.rect(screen, rect1_color, (rect1_x, rect1_y, rect1_size, rect1_size))
     pygame.draw.rect(screen, RED, (rect2_x, rect2_y, rect2_size, rect2_size))
 
-    # Kollisions-Zähler anzeigen
+    # Kollisionszahl anzeigen
     count_text = font.render(f"Kollisionen: {collision_count}", True, BLACK)
     screen.blit(count_text, (10, 10))
 
+    # Anzeige aktualisieren und Bildrate begrenzen
     pygame.display.flip()
     clock.tick(60)
 
+# Pygame beenden
 pygame.quit()

@@ -166,6 +166,10 @@ while running:
 pygame.quit()
 ```
 
+**Eigene Aufgabe:** Erstelle dein erstes pygame-Fenster und die Game Loop.
+- [Aufgabe: Erstes pygame-Fenster](aufgaben_pygame/aufgabe_pygame0.py)
+- [Lösung: Erstes pygame-Fenster](loesungen_pygame/loesung_pygame0.py)
+
 ---
 
 ### Teil 4: "Game Development - Bewegung und Interaktion"

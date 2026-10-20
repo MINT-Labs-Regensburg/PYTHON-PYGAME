@@ -1,10 +1,10 @@
-# Einfacher Taschenrechner - Dein erstes Python Programm!
+# Lösung: Einfacher Taschenrechner
 # Mini-Projekt aus Stunde 1 des Python & Pygame Kurses
 
-# Erste Zahl eingeben
+# 1. Erste Zahl abfragen
 erste_zahl = float(input("Gib die erste Zahl ein: "))
 
-# Operation auswählen
+# 2. Rechenoperation auswählen
 print("\nWähle eine Operation:")
 print("+ für Addition")
 print("- für Subtraktion")
@@ -13,10 +13,10 @@ print("/ für Division")
 
 operation = input("\nDeine Wahl (+, -, *, /): ")
 
-# Zweite Zahl eingeben
+# 3. Zweite Zahl abfragen
 zweite_zahl = float(input("Gib die zweite Zahl ein: "))
 
-# Berechnung durchführen
+# 4. Berechnung durchführen und Ergebnis ausgeben
 if operation == "+":
     ergebnis = erste_zahl + zweite_zahl
     print(f"\n{erste_zahl} + {zweite_zahl} = {ergebnis}")

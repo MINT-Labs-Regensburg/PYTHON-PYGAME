@@ -9,7 +9,7 @@
 
 # 3. 💥 Erkenne eine Kollision zwischen den beiden Rechtecken
 #    - Bei Kollision: Score um 1 erhöhen
-#    - Das rote Rechteck springt an eine neue zufällige Position
+#    - Das rote Rechteck springt an eine neue zufällige Position, die im nächsten Frame sichtbar wird
 #    - Das rote Rechteck bekommt eine neue zufällige Richtung
 
 

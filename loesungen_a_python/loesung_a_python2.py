@@ -1,13 +1,13 @@
-# Lösung aufgabe_python2: If-Statements
+# Lösung Aufgabe Python 2: If-Statements
 
-# 1. Temperatur-Check
+# 1. Temperatur beurteilen
 temperatur = int(input("Temperatur eingeben: "))
 if temperatur > 20:
     print("Schön warm")
 else:
     print("Kalt isses")
 
-# 2. Notensystem
+# 2. Punktzahl einer Note zuordnen
 note = int(input("Gib deine Punktzahl ein: "))
 if note >= 90:
     print("Sehr gut!")

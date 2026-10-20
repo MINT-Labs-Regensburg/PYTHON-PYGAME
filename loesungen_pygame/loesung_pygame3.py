@@ -4,6 +4,7 @@ import os
 import random
 import pygame
 
+# Pygame initialisieren
 pygame.init()
 
 # Konstanten
@@ -19,24 +20,24 @@ BLACK = (0, 0, 0)
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 pygame.display.set_caption("Catch the Ball - Game Mechanics")
 
-# Spieler
+# Spieler vorbereiten
 player_size = 70
 player_x = SCREEN_WIDTH // 2 - player_size // 2
 player_y = SCREEN_HEIGHT - player_size - 20
 player_speed = 7
 
-# Ball
+# Ball vorbereiten
 ball_size = 30
 ball_x = random.randint(0, SCREEN_WIDTH - ball_size)
 ball_y = 0
 ball_speed = 4
 
-# Spiel-Variablen
+# Spielstand und Zeitmessung vorbereiten
 score = 0
 clock = pygame.time.Clock()
 start_time = pygame.time.get_ticks()
 
-# Font optional laden, damit das Spiel auch ohne pygame.font laeuft
+# Schrift laden, falls das Font-Modul verfügbar ist
 font = None
 if hasattr(pygame, "font"):
     try:
@@ -44,7 +45,7 @@ if hasattr(pygame, "font"):
     except (NotImplementedError, AttributeError):
         font = None
 
-# Sound vorbereiten
+# Sounds laden, falls Mixer und Dateien verfügbar sind
 hit_sound = None
 miss_sound = None
 try:
@@ -59,21 +60,21 @@ except pygame.error:
     hit_sound = None
     miss_sound = None
 
-# Game Loop
+# Hauptschleife
 running = True
 while running:
-    # Events
+    # Ereignisse verarbeiten
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
 
-    # Verbleibende Zeit berechnen
+    # Verbleibende Spielzeit berechnen
     elapsed_ms = pygame.time.get_ticks() - start_time
     time_left = max(0, GAME_TIME_SECONDS - elapsed_ms // 1000)
     if time_left == 0:
         running = False
 
-    # Tastatureingaben
+    # Tastatureingaben verarbeiten
     keys = pygame.key.get_pressed()
     if keys[pygame.K_LEFT] and player_x > 0:
         player_x -= player_speed
@@ -83,7 +84,7 @@ while running:
     # Ball bewegen
     ball_y += ball_speed
 
-    # Treffer pruefen
+    # Treffer erkennen und Spielstand erhöhen
     if (
         player_x < ball_x + ball_size
         and player_x + player_size > ball_x
@@ -97,31 +98,33 @@ while running:
         ball_x = random.randint(0, SCREEN_WIDTH - ball_size)
         ball_y = 0
 
-    # Ball unten angekommen
+    # Verpassten Ball zurücksetzen
     if ball_y > SCREEN_HEIGHT:
         if miss_sound is not None:
             miss_sound.play()
         ball_x = random.randint(0, SCREEN_WIDTH - ball_size)
         ball_y = 0
 
-    # Zeichnen
+    # Szene zeichnen
     screen.fill(WHITE)
+    # Spieler und Ball zeichnen
     pygame.draw.rect(screen, BLUE, (player_x, player_y, player_size, player_size))
     pygame.draw.circle(
         screen, RED, (ball_x + ball_size // 2, ball_y + ball_size // 2), ball_size // 2
     )
 
-    # UI anzeigen (nur wenn Font verfuegbar)
+    # Spielstand und Zeit anzeigen, falls eine Schrift verfügbar ist
     if font is not None:
         score_text = font.render(f"Score: {score}", True, BLACK)
         timer_text = font.render(f"Zeit: {time_left}s", True, BLACK)
         screen.blit(score_text, (10, 10))
         screen.blit(timer_text, (10, 45))
 
+    # Anzeige aktualisieren und Bildrate begrenzen
     pygame.display.flip()
     clock.tick(60)
 
-# Endscreen kurz anzeigen
+# Endbild kurz anzeigen
 if font is not None:
     screen.fill(WHITE)
     end_text = font.render(f"Zeit vorbei! Endscore: {score}", True, BLACK)
@@ -129,4 +132,5 @@ if font is not None:
     pygame.display.flip()
     pygame.time.wait(2000)
 
+# Pygame beenden
 pygame.quit()

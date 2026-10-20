@@ -1,25 +1,28 @@
-# Lösung aufgabe_python4: Funktionen
+# Lösung Aufgabe Python 4: Funktionen
 
-# 1. Funktion begruesse(name) – gibt "Hallo, <name>!" aus
+# 1. Begrüßungsfunktion definieren
 def begruesse(name):
     print(f"Hallo, {name}!")
 
-# 2. Funktion addiere(a, b) – gibt die Summe zurück und gibt sie aus
+# 2. Funktion zum Addieren definieren, Due FUnktion gibt das ergebnis zurück
 def addiere(a, b):
-    summe = a + b
-    print(f"{a} + {b} = {summe}")
+    summe = a+b
     return summe
 
-# 3. Funktion ist_gerade(zahl) – gibt True oder False zurück
+# 3. Funktion zum Prüfen gerader Zahlen definieren
 def ist_gerade(zahl):
-    return zahl % 2 == 0
+    ergebnis = zahl % 2 == 0
+    return ergebnis
 
-# 4. Jede Funktion mit verschiedenen Werten aufrufen
+# 4. Funktionen mit verschiedenen Werten aufrufen und Rückgabewerte ausgeben
 begruesse("Nicole")
 begruesse("Max")
 
-addiere(3, 5)
-addiere(10, 27)
+summe = addiere(3, 5)
+print(f"3 + 5 = {summe}")
 
-print(ist_gerade(4))   # True
-print(ist_gerade(7))   # False
+summe = addiere(10, 27)
+print(f"10 + 27 = {summe}")
+
+print(f"Ist 4 gerade? {ist_gerade(4)}")
+print(f"Ist 7 gerade? {ist_gerade(7)}")

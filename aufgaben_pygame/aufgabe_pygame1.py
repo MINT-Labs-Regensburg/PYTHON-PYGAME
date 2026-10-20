@@ -6,3 +6,7 @@
 # 2. 🚀 Füge WASD-Steuerung hinzu (W=hoch, A=links, S=runter, D=rechts)
 
 
+# 💡 Hinweis: Begrenze die Position so, dass das Rechteck den Bildschirm nicht verlässt.
+#             Für x gilt: 0 bis SCREEN_WIDTH - rect_size, für y: 0 bis SCREEN_HEIGHT - rect_size.
+
+
