@@ -61,6 +61,7 @@ print("Hello World!")
 ### Teil 2: "Python - Listen, Schleifen, Funktionen & Co."
 
 **Was lernst du:**
+- **Variablen** - Werte speichern, ändern und verwenden
 - **Listen** - Wie man Daten organisiert
 - **If-Else Statements** - Deinem Programm Entscheidungen beibringen
 - **Schleifen** - Lass den Computer für dich arbeiten!
