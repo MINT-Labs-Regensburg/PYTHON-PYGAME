@@ -1,7 +1,5 @@
 # Lösung aufgabe_pygame1: Tastatureingaben
-
 import pygame
-
 
 # Pygame initialisieren
 pygame.init()
@@ -35,24 +33,32 @@ while running:
     keys = pygame.key.get_pressed()
 
     # Bewegung mit den Pfeiltasten
-    if keys[pygame.K_LEFT] and rect_x > 0:
-        rect_x = rect_x - RECT_SPEED
-    if keys[pygame.K_RIGHT] and rect_x < SCREEN_WIDTH - rect_size:
-        rect_x = rect_x + RECT_SPEED
-    if keys[pygame.K_UP] and rect_y > 0:
-        rect_y = rect_y - RECT_SPEED
-    if keys[pygame.K_DOWN] and rect_y < SCREEN_HEIGHT - rect_size:
-        rect_y = rect_y + RECT_SPEED
+    if keys[pygame.K_LEFT]:
+        if rect_x >= RECT_SPEED:
+            rect_x = rect_x - RECT_SPEED
+    if keys[pygame.K_RIGHT]:
+        if rect_x + RECT_SPEED <= SCREEN_WIDTH - rect_size:
+            rect_x = rect_x + RECT_SPEED
+    if keys[pygame.K_UP]:
+        if rect_y >= RECT_SPEED:
+            rect_y = rect_y - RECT_SPEED
+    if keys[pygame.K_DOWN]:
+        if rect_y + RECT_SPEED <= SCREEN_HEIGHT - rect_size:
+            rect_y = rect_y + RECT_SPEED
 
     # Alternative Steuerung mit WASD
-    if keys[pygame.K_a] and rect_x > 0:
-        rect_x = rect_x - RECT_SPEED
-    if keys[pygame.K_d] and rect_x < SCREEN_WIDTH - rect_size:
-        rect_x = rect_x + RECT_SPEED
-    if keys[pygame.K_w] and rect_y > 0:
-        rect_y = rect_y - RECT_SPEED
-    if keys[pygame.K_s] and rect_y < SCREEN_HEIGHT - rect_size:
-        rect_y = rect_y + RECT_SPEED
+    if keys[pygame.K_a]:
+        if rect_x >= RECT_SPEED:
+            rect_x = rect_x - RECT_SPEED
+    if keys[pygame.K_d]:
+        if rect_x + RECT_SPEED <= SCREEN_WIDTH - rect_size:
+            rect_x = rect_x + RECT_SPEED
+    if keys[pygame.K_w]:
+        if rect_y >= RECT_SPEED:
+            rect_y = rect_y - RECT_SPEED
+    if keys[pygame.K_s]:
+        if rect_y + RECT_SPEED <= SCREEN_HEIGHT - rect_size:
+            rect_y = rect_y + RECT_SPEED
 
     # Szene zeichnen
     screen.fill(WHITE)

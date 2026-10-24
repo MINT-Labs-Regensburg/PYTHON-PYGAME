@@ -59,14 +59,18 @@ while running:
 
     # Tastatureingaben verarbeiten
     keys = pygame.key.get_pressed()
-    if keys[pygame.K_LEFT] and rect2_x > 0:
-        rect2_x -= rect2_speed
-    if keys[pygame.K_RIGHT] and rect2_x < SCREEN_WIDTH - rect2_size:
-        rect2_x += rect2_speed
-    if keys[pygame.K_UP] and rect2_y > 0:
-        rect2_y -= rect2_speed
-    if keys[pygame.K_DOWN] and rect2_y < SCREEN_HEIGHT - rect2_size:
-        rect2_y += rect2_speed
+    if keys[pygame.K_LEFT]:
+        if rect2_x >= rect2_speed:
+            rect2_x -= rect2_speed
+    if keys[pygame.K_RIGHT]:
+        if rect2_x + rect2_speed <= SCREEN_WIDTH - rect2_size:
+            rect2_x += rect2_speed
+    if keys[pygame.K_UP]:
+        if rect2_y >= rect2_speed:
+            rect2_y -= rect2_speed
+    if keys[pygame.K_DOWN]:
+        if rect2_y + rect2_speed <= SCREEN_HEIGHT - rect2_size:
+            rect2_y += rect2_speed
 
     # Kollision erkennen
     was_collision = collision_detected

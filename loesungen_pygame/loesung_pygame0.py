@@ -1,7 +1,5 @@
 # Lösung aufgabe_pygame0: Dein erstes pygame-Fenster
-
 import pygame
-
 
 # Pygame initialisieren
 pygame.init()

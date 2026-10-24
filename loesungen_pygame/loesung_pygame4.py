@@ -1,6 +1,7 @@
 # Lösung aufgabe_pygame4: Kollisionserkennung mit bewegtem Ziel
 
 import random
+
 import pygame
 
 # Pygame initialisieren
@@ -71,14 +72,18 @@ while running:
 
     # Spieler mit Pfeiltasten oder WASD steuern
     keys = pygame.key.get_pressed()
-    if (keys[pygame.K_LEFT] or keys[pygame.K_a]) and player_x > 0:
-        player_x -= PLAYER_SPEED
-    if (keys[pygame.K_RIGHT] or keys[pygame.K_d]) and player_x < SCREEN_WIDTH - player_size:
-        player_x += PLAYER_SPEED
-    if (keys[pygame.K_UP] or keys[pygame.K_w]) and player_y > 0:
-        player_y -= PLAYER_SPEED
-    if (keys[pygame.K_DOWN] or keys[pygame.K_s]) and player_y < SCREEN_HEIGHT - player_size:
-        player_y += PLAYER_SPEED
+    if keys[pygame.K_LEFT] or keys[pygame.K_a]:
+        if player_x >= PLAYER_SPEED:
+            player_x -= PLAYER_SPEED
+    if keys[pygame.K_RIGHT] or keys[pygame.K_d]:
+        if player_x + PLAYER_SPEED <= SCREEN_WIDTH - player_size:
+            player_x += PLAYER_SPEED
+    if keys[pygame.K_UP] or keys[pygame.K_w]:
+        if player_y >= PLAYER_SPEED:
+            player_y -= PLAYER_SPEED
+    if keys[pygame.K_DOWN] or keys[pygame.K_s]:
+        if player_y + PLAYER_SPEED <= SCREEN_HEIGHT - player_size:
+            player_y += PLAYER_SPEED
 
     # Ziel bewegen
     target_x += target_dx

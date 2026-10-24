@@ -2,6 +2,7 @@
 
 import os
 import random
+
 import pygame
 
 # Pygame initialisieren
@@ -76,10 +77,12 @@ while running:
 
     # Tastatureingaben verarbeiten
     keys = pygame.key.get_pressed()
-    if keys[pygame.K_LEFT] and player_x > 0:
-        player_x -= player_speed
-    if keys[pygame.K_RIGHT] and player_x < SCREEN_WIDTH - player_size:
-        player_x += player_speed
+    if keys[pygame.K_LEFT]:
+        if player_x >= player_speed:
+            player_x -= player_speed
+    if keys[pygame.K_RIGHT]:
+        if player_x + player_speed <= SCREEN_WIDTH - player_size:
+            player_x += player_speed
 
     # Ball bewegen
     ball_y += ball_speed
