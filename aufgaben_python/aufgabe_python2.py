@@ -6,7 +6,3 @@
 
 # 2. 📊 Notensystem: Baue ein Notensystem mit if-elif-else (90+ = Sehr gut, 80+ = Gut, etc.)
 
-
-# 3. 🍎 Listen-Check: Erstelle eine Liste mit mindestens drei Lieblingsfrüchten.
-# Frage mit input() nach einer Frucht und prüfe mit if, ob sie in der Liste steht.
-# Gib eine passende Nachricht aus, je nachdem ob die Frucht enthalten ist.

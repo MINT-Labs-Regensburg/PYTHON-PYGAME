@@ -20,10 +20,3 @@ elif note >= 60:
 else:
     print("Durchgefallen")
 
-# 3. Prüfen, ob eine Frucht in der Liste steht
-lieblingsfruechte = ["Apfel", "Banane", "Erdbeere"]
-frucht = input("Gib eine Frucht ein: ")
-if frucht in lieblingsfruechte:
-    print("Das ist eine meiner Lieblingsfrüchte!")
-else:
-    print("Diese Frucht steht nicht auf meiner Liste.")
