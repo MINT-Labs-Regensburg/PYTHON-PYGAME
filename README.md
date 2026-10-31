@@ -86,6 +86,8 @@ Arbeite dich von der ersten Textausgabe bis zu einer personalisierten Begruessun
 
 2. **Notensystem:** Baue ein Notensystem mit `if-elif-else` *(90+ = Sehr gut, 80+ = Gut, etc.)*
 
+3. **Listen-Check:** Erstelle eine Liste mit mindestens drei Lieblingsfrüchten. Frage mit `input()` nach einer Frucht und prüfe mit `if`, ob sie in der Liste steht.
+
 
 **Aufgabe 3: Schleifen**
 1. Zähle von 1 bis 10 mit `for i in range(1, 11)`
