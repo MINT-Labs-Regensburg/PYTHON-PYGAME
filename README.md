@@ -56,6 +56,8 @@ Auf den Kursrechnern sind Python und Visual Studio Code vorbereitet. Wenn du dei
 print("Hello World!")
 ```
 
+Übe den Einstieg mit [Aufgabe 0: Hello World und Begruessung](aufgaben_python/aufgabe_python0.py).
+
 ---
 
 ### Teil 2: "Python - Listen, Schleifen, Funktionen & Co."
@@ -67,6 +69,9 @@ print("Hello World!")
 - **Schleifen** - Lass den Computer für dich arbeiten!
 - **Funktionen** - Code wiederverwenden und Parameter übergeben
 
+
+**Aufgabe 0: Hello World und Begruessung**
+Arbeite dich von der ersten Textausgabe bis zu einer personalisierten Begruessung vor: [Aufgabenblatt](aufgaben_python/aufgabe_python0.py)
 
 **Aufgabe 1: Variablen**
 1. Erstelle Variablen für `name`, `alter` und `groesse`
@@ -96,7 +101,7 @@ print("Hello World!")
 3. Schreibe eine Funktion `ist_gerade(zahl)`, die `True` oder `False` zurückgibt
 4. Rufe jede Funktion mit verschiedenen Werten auf
 
-**Zusatzaufgabe:** Programmiere einen simplen Taschenrechner mit zwei Zahlen und den Grundrechenarten. [Aufgabenblatt](aufgaben_a_python/aufgabe_taschenrechner.py) · [Beispiel-Lösung](loesungen_a_python/loesung_a_taschenrechner.py)
+**Zusatzaufgabe:** Programmiere einen simplen Taschenrechner mit zwei Zahlen und den Grundrechenarten. [Aufgabenblatt](aufgaben_python/aufgabe_taschenrechner.py) · [Beispiel-Lösung](aufgaben_python/loesung_taschenrechner.py)
 
 
 ---
@@ -168,8 +173,8 @@ pygame.quit()
 ```
 
 **Eigene Aufgabe:** Erstelle dein erstes pygame-Fenster und die Game Loop.
-- [Aufgabe: Erstes pygame-Fenster](aufgaben_pygame/aufgabe_pygame0.py)
-- [Lösung: Erstes pygame-Fenster](loesungen_pygame/loesung_pygame0.py)
+- [Aufgabe: Erstes pygame-Fenster](pygame/aufgabe_pygame0.py)
+- [Lösung: Erstes pygame-Fenster](pygame/loesung_pygame0.py)
 
 ---
 
@@ -190,14 +195,14 @@ pygame.quit()
 2. Ändere die Farbe bei einer Kollision
 3. Zähle die Anzahl der Kollisionen und zeige sie an
 
-- [Beispiel-Code Kollisionserkennung](loesungen_pygame/loesung_pygame2.py)
+- [Beispiel-Code Kollisionserkennung](pygame/loesung_pygame2.py)
 
 **Zusatzaufgabe:** Programmiere ein "Catch the Ball" Spiel mit folgenden Anforderungen:
 1. Programmiere ein "Catch the Ball" Spiel
 2. Füge einen Score-Counter hinzu
 3. Baue einen Timer ein (30 Sekunden Spielzeit)
 
-- [Beispiel-Code Catch the Ball](loesungen_pygame/loesung_pygame3.py)
+- [Beispiel-Code Catch the Ball](pygame/loesung_pygame3.py)
 
 ---
 
