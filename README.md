@@ -36,12 +36,13 @@ Auf den Kursrechnern sind Python und Visual Studio Code vorbereitet. Wenn du dei
 ### Teil 1: So startest du Python in Visual Studio Code
 
 **Schritt-für-Schritt Anleitung:**
-1. **VS Code öffnen** - Doppelklick auf das Icon
-2. **Neue Datei** - `Strg + N` drücken
-3. **Als Python speichern** - `Strg + S` → Name eingeben mit `.py` am Ende *(z.B. `mein_programm.py`)*
-4. **Code schreiben** - Einfach lostippen!
-5. **Programm starten** - `F5` drücken oder rechte Maustaste → "Run Python File"
-6. **Ausgabe sehen** - Unten im Terminal erscheint das Ergebnis
+1. **Kursordner anlegen** - Erstelle einen Ordner für deine Kursdateien, z.B. `python_peter`
+2. **Ordner in VS Code öffnen** - VS Code starten und den Kursordner öffnen
+3. **Neue Datei** - `Strg + N` drücken
+4. **Als Python speichern** - `Strg + S` drücken und die Datei im Kursordner speichern. Der Dateiname endet auf `.py` *(z.B. `mein_programm.py`)*
+5. **Code schreiben** - Einfach lostippen!
+6. **Programm starten** - `F5` drücken oder rechte Maustaste → "Run Python File"
+7. **Ausgabe sehen** - Unten im Terminal erscheint das Ergebnis
 
 #### Dein erstes Python-Programm:
 ```python
