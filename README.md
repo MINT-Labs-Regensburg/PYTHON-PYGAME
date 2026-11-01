@@ -1,11 +1,4 @@
 # Python & Pygame Kurs - Gaming Adventure!
-
-Willkommen zu unserem Python & Pygame Kurs!
-
----
-
-## 💝 Herzlichen Dank
-
 | Ein herzliches Dankeschön an **Dr. Norwin von Malm** und **Stefan Grötsch** – die Preisträger des [Deutschen Zukunftspreises 2024](https://www.deutscher-zukunftspreis.de/de/team-1-2024)<br><br>Mit ihrer Spende und ihrer großzügigen Unterstützung haben Sie die Entwicklung und Durchführung dieses Kurses ermöglicht. | <img src="assets/DZP_Logo_2.svg" alt="DZP Logo" width="120"/> |
 |:---|:---:|
 
@@ -30,8 +23,7 @@ Auf den Kursrechnern sind Python und Visual Studio Code vorbereitet. Wenn du dei
 3. **Python-Erweiterung für VS Code** - Zum Ausführen und Verwalten von Python in VS Code
 4. **Cheat-sheets** - Übersicht über die wichtigsten Befehle:
    - [Python Cheatsheet](assets/python-cheat-sheet.pdf)
-   - [pygame Cheatsheet deutsch](assets/pygame-cheat-sheet.pdf)
-   - [pygame Cheatsheet](assets/rootix_basic-pygame.pdf)
+   - [pygame Cheatsheet](assets/pygame-cheat-sheet.pdf)
 
 ### Hardware
 - Einen Computer mit Tastatur und Maus
@@ -175,8 +167,8 @@ pygame.quit()
 ```
 
 **Eigene Aufgabe:** Erstelle dein erstes pygame-Fenster und die Game Loop.
-- [Aufgabe: Erstes pygame-Fenster](pygame/aufgabe_pygame0.py)
-- [Lösung: Erstes pygame-Fenster](pygame/loesung_pygame0.py)
+- [Aufgabe: Erstes pygame-Fenster](pygame/aufgaben_pygame/aufgabe_pygame0.py)
+- [Lösung: Erstes pygame-Fenster](pygame/aufgaben_pygame/loesung_pygame0.py)
 
 ---
 
@@ -197,14 +189,14 @@ pygame.quit()
 2. Ändere die Farbe bei einer Kollision
 3. Zähle die Anzahl der Kollisionen und zeige sie an
 
-- [Beispiel-Code Kollisionserkennung](pygame/loesung_pygame2.py)
+- [Beispiel-Code Kollisionserkennung](pygame/aufgaben_pygame/loesung_pygame2.py)
 
 **Zusatzaufgabe:** Programmiere ein "Catch the Ball" Spiel mit folgenden Anforderungen:
 1. Programmiere ein "Catch the Ball" Spiel
 2. Füge einen Score-Counter hinzu
 3. Baue einen Timer ein (30 Sekunden Spielzeit)
 
-- [Beispiel-Code Catch the Ball](pygame/loesung_pygame3.py)
+- [Beispiel-Code Catch the Ball](pygame/aufgaben_pygame/loesung_pygame3.py)
 
 ---
 
