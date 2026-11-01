@@ -48,8 +48,6 @@ Auf den Kursrechnern sind Python und Visual Studio Code vorbereitet. Wenn du dei
 print("Hello World!")
 ```
 
-Übe den Einstieg mit [Aufgabe 0: Hello World und Begruessung](aufgaben_python/aufgabe_python0.py).
-
 ---
 
 ### Teil 2: "Python - Listen, Schleifen, Funktionen & Co."
@@ -61,9 +59,6 @@ print("Hello World!")
 - **Schleifen** - Lass den Computer für dich arbeiten!
 - **Funktionen** - Code wiederverwenden und Parameter übergeben
 
-
-**Aufgabe 0: Hello World und Begruessung**
-Arbeite dich von der ersten Textausgabe bis zu einer personalisierten Begruessung vor: [Aufgabenblatt](aufgaben_python/aufgabe_python0.py)
 
 **Aufgabe 1: Variablen**
 1. Erstelle Variablen für `name`, `alter` und `groesse`
