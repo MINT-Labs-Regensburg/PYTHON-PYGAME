@@ -37,7 +37,7 @@ Auf den Kursrechnern sind Python und Visual Studio Code vorbereitet. Wenn du dei
 
 **Schritt-für-Schritt Anleitung:**
 1. **Kursordner anlegen** - Erstelle einen Ordner für deine Kursdateien, z.B. `python_peter`
-2. **Ordner in VS Code öffnen** - VS Code starten und den Kursordner öffnen
+2. **Ordner in VS Code öffnen** - VS Code starten, **File → Open Folder…** wählen und den Kursordner auswählen
 3. **Neue Datei** - `Strg + N` drücken
 4. **Als Python speichern** - `Strg + S` drücken und die Datei im Kursordner speichern. Der Dateiname endet auf `.py` *(z.B. `mein_programm.py`)*
 5. **Code schreiben** - Einfach lostippen!
